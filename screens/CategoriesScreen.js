@@ -1,4 +1,4 @@
-import { View, ScrollView, FlatList, StyleSheet } from 'react-native';
+import { FlatList, StyleSheet } from 'react-native';
 
 import { CATEGORIES } from '../data/dunny-data';
 import CategoryGridTile from '../components/CategoryGridTile';
@@ -22,6 +22,4 @@ const CategoriesScreen = () => {
 
 export default CategoriesScreen;
 
-const styles = StyleSheet.create({
-
-})
+const styles = StyleSheet.create({});

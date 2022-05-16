@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-import { set } from "react-native-reanimated";
 
 export const FavoritesContext = createContext({
     ids: [],
@@ -11,9 +10,9 @@ const FavoriteContextProvider = ({children}) => {
     const [favoriteMealIds, setFavoriteMealIds] = useState([]);
 
     const addFavorite = (id) => {
-        setFavoriteMealIds((currentFavIds) => [...currentFavIds, id])
+        setFavoriteMealIds((currentFavIds) => [...currentFavIds, id]);
     };
-
+    
     const removeFavorite = (id) => {
         setFavoriteMealIds((currentFavIds) => currentFavIds.filter((mealId) => mealId !== id));
     };
